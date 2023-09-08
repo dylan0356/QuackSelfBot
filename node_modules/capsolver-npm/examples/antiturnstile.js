@@ -1,0 +1,11 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function() {
+    await handler.antiturnstile(
+'https://peet.ws/turnstile-test/non-interactive.html',
+'0x4AAAAAAABS7vwvV6VFfMcD',
+        { proxy: 'proxy.provider.io:23331:user1:password1' },
+        { type: 'turnstile', action: 'login', cdata: '0000-1111-2222-3333-example-cdata' }
+    ).then((captcha) => { if(captcha.error !== 0){ console.log(captcha.apiResponse) }else{ console.log(captcha.solution) } })
+})();

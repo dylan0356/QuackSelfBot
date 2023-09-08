@@ -1,0 +1,15 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function () {
+    await handler.mtcaptchaproxyless(
+        "https://www.mtcaptcha.com/",
+        "MTPublic-tqNCRE0GS",
+    ).then((captcha) => {
+        if (captcha.error !== 0) {
+            console.log(captcha.apiResponse)
+        } else {
+            console.log(captcha.solution)
+        }
+    })
+})();

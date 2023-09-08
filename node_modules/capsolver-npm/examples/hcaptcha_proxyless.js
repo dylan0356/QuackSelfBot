@@ -1,0 +1,13 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function () {
+    await handler.hcaptchaproxyless('https://discord.com/', '4c672d35-0701-42b2-88c3-78380b0db560')
+        .then(response => {
+            if (response.error === 0) {
+                console.log(response.solution)
+            } else {
+                console.log('error ' + JSON.stringify(response.apiResponse))
+            }
+        })
+})();

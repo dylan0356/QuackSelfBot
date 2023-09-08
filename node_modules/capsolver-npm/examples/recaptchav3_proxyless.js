@@ -1,0 +1,13 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function () {
+    await handler.recaptchav3proxyless('https://www.freemans.com/', '6LfA5nobAAAAAMxwekgF_DnCofaDlm-YqHX5v1BI', 'sign_in')
+        .then(response => {
+            if (response.error === 0) {
+                console.log(response.solution)
+            } else {
+                console.log('error ' + JSON.stringify(response.apiResponse))
+            }
+        })
+})();

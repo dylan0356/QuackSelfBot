@@ -1,0 +1,23 @@
+{
+  "name": "quackselfbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "2captcha": "^3.0.7",
+    "capsolver-npm": "^1.0.9",
+    "chalk": "^4.1.2",
+    "discord.js-selfbot-v13": "^2.14.10",
+    "gradient-string": "^2.0.2",
+    "node-capmonster": "^0.4.2",
+    "openai": "^4.4.0",
+    "proxy-agent": "^6.3.0",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6"
+  }
+}

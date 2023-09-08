@@ -1,0 +1,11 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function() {
+    await handler.image2text(
+        '...',
+//        '...',     // optional
+//        0.01,       // optional
+//        false,       // optional
+    ).then((captcha) => { if(captcha.error !== 0){ console.log(captcha.apiResponse) }else{ console.log(captcha.solution) } })
+})();

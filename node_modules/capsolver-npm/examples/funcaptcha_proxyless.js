@@ -1,0 +1,13 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function () {
+    await handler.funcaptchaproxyless('https://thecheesecakefactory.cashstar.com/', '84E1DACC-3B8E-04D6-6E35-2A7D2B8ACFE1', 'client-api.arkoselabs.com')
+        .then(response => {
+            if (response.error === 0) {
+                console.log(response.solution)
+            } else {
+                console.log('error ' + JSON.stringify(response.apiResponse))
+            }
+        })
+})();

@@ -1,0 +1,11 @@
+{
+    "captchaKey" : "2d55023fd26c06ce80f71e4f3edcc5cd",
+    "openaiKey" : "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",
+    "permissionToMessage" : "MANAGE_MESSAGES",
+    "startingPrompt" : "Please take this message and reword it and make it simple and friendly: (Hello, I am a recruiter for a crypto company. We are looking for people to fill a job position. You looked like you would be interested in joining our team.) If you send them a link send them a link to the discord https://discord.gg/m49bvR4Q",
+    "replyToDMPrompt" : "Please take this message and respond to it like you are a trying to get this user to join your crypto working team. Keep the response short and concise only a few sentances max. If the user says that they are ok, do not want to join, arent interested or anything on those sorts just tell them Thats okay and to have a nice day. If they agree and are interested send them this discord link to join somewhere in your message, if you were to send any link send this one (https://discord.gg/m49bvR4Q), here is the message to respond to :",
+    "printGeneratedMessages" : true,
+    "timeBetweenInitalMessaging" : 40,
+    "timeBetweenMessages" : 40,
+    "joinDelay": 5
+}

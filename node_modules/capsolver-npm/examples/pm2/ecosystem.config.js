@@ -1,0 +1,13 @@
+module.exports = {
+    apps: [
+        { name: "1", script: "../antiturnstile.js" },
+        { name: "2", script: "../antiturnstile.js" },
+        { name: "3", script: "../antiturnstile.js" },
+        { name: "4", script: "../antiturnstile.js" },
+        { name: "5", script: "../antiturnstile.js" },
+        { name: "6", script: "../antiturnstile.js" },
+        { name: "7", script: "../antiturnstile.js" },
+        { name: "8", script: "../antiturnstile.js" },
+        { name: "9", script: "../antiturnstile.js" },
+    ]
+}

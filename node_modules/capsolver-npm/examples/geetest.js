@@ -1,0 +1,20 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function () {
+    await handler.geetest(
+        'https://us.shein.com/user/auth/login?direction=nav',
+        null,
+        null,
+        {'proxy':'proxy.provider.io:23331:user1:password1'},
+        "us.shein.com/geetest",
+        "us.shein.com/geetest",
+    )
+        .then(response => {
+            if (response.error === 0) {
+                console.log(response.solution)
+            } else {
+                console.log('error ' + JSON.stringify(response.apiResponse))
+            }
+        })
+})();

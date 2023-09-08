@@ -1,0 +1,13 @@
+const CapSolver = require('../src/CapSolver');
+const handler = new CapSolver('CAI-XXXX ...');
+
+(async function () {
+    await handler.hcaptchaenterpriseproxyless('https://hcaptcha.com/', '00000000-0000-0000-0000-000000000000')
+        .then(response => {
+            if (response.error === 0) {
+                console.log(response.solution)
+            } else {
+                console.log('error ' + JSON.stringify(response))
+            }
+        })
+})();
